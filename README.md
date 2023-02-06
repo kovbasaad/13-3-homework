@@ -20,7 +20,8 @@
 ![sV](https://github.com/kovbasaad/13-3-homework/blob/main/img/nmap%20sV.JPG)
 ![sVlog](https://github.com/kovbasaad/13-3-homework/blob/main/img/nmap%20sV%20log.JPG)
 
-В логи Fail2Ban атаки не попали
+Suricata определяет атаки как опасности, в случае -sS, -sA, -sV (использует тип по умолчанию = -sS) сканирования определяет тип сканирования, -sT не определяет, но фиксирует подозрительную активность (само открытых портов не находит)
+В логи Fail2Ban атаки не попали, но до настройки Fail2Ban 22 порт определяется как открытый, после - как фильтруемый
 
 
 ------
@@ -34,3 +35,5 @@
 ![hydra](https://github.com/kovbasaad/13-3-homework/blob/main/img/hydra.JPG)
 ![hydra-suricata](https://github.com/kovbasaad/13-3-homework/blob/main/img/hydra-suricata.JPG)
 ![hydra-fail2ban](https://github.com/kovbasaad/13-3-homework/blob/main/img/hydra-fail2ban.JPG)
+
+Suricata фиксирует события ssh сканирования, Fail2Ban - попытки неудачной авторизации и блокирует подозрительный IP
